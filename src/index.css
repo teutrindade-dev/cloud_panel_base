@@ -1,0 +1,48 @@
+:root {
+    /* Paleta principal */
+    --color-dark: #2e2e2e;
+    --color-peach: #f2eae1;
+    --color-light-gray: #d9d9d3;
+    --color-pastel-green: #a7c4bc;
+
+    /* Cores de destaque */
+    --color-highlight1: #c0a88e;
+    --color-highlight2: #99bfa3;
+
+    /* Variações sugeridas */
+    --color-hover: rgba(46, 46, 46, 0.8);
+    --color-active: #1e1e1e;
+    --color-disabled: #bfbfbf;
+    --color-error: #e63946;
+    --color-success: #2a9d8f;
+
+    /* Tipografia */
+    --font-primary: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-peach);
+    color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+}
+
+p, span {
+    font-family: var(--font-primary);
+    font-weight: 300;
+}
+
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-hover);
+}

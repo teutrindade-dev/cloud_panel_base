@@ -1,0 +1,54 @@
+/* Container principal da sidebar */
+.sidebar-container {
+    width: 250px; /* Largura do sidebar */
+    background-color: #f2eae1; /* Fundo da sidebar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 20px;
+    border-radius: 8px;
+    height: 100vh; /* Altura total */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Lista de links da sidebar */
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo do link da sidebar */
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e; /* Cor padrão */
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.sidebar-button .sidebar-icon {
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Hover no botão */
+.sidebar-button:hover {
+    background-color: #d9d9d3; /* Fundo ao passar o mouse */
+    color: #000000; /* Texto mais escuro */
+}
+
+/* Estado ativo */
+.sidebar-button.active {
+    background: linear-gradient(90deg, #a7c4bc, #c0a88e);
+    color: #ffffff;
+    border-radius: 8px;
+}

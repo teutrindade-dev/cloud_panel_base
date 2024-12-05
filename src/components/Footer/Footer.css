@@ -1,0 +1,87 @@
+/* Footer container */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f2eae1; /* Fundo pastel */
+    color: #2e2e2e; /* Texto escuro */
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Footer column */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Títulos do footer */
+.footer-title {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.footer-link {
+    display: block;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    color: #2e2e2e;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #a7c4bc; /* Cor no hover */
+}
+
+/* Formulário de newsletter */
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-text {
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #d9d9d3;
+    border-radius: 8px;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #a7c4bc;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #a7c4bc; /* Fundo pastel */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0a88e; /* Cor no hover */
+}

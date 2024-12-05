@@ -1,0 +1,125 @@
+/* Header principal */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f2eae1; /* Fundo pastel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+/* Conteúdo interno do header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2e2e;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Links da navbar */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #a7c4bc; /* Verde pastel no hover */
+}
+
+.nav-link.active {
+    color: #c0a88e; /* Destaque */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: none; /* Escondido por padrão */
+}
+
+.dropdown-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2e2e2e;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #f2eae1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+}
+
+.dropdown-link {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+    display: block;
+}
+
+.dropdown-link:hover {
+    background-color: #d9d9d3;
+    color: #000000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}

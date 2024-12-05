@@ -1,0 +1,29 @@
+/* Container principal */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2eae1;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Título */
+.dashboard-title {
+    font-family: var(--font-primary);
+    font-size: 24px;
+    font-weight: 700;
+    color: #2e2e2e;
+    margin-bottom: 20px;
+}
+
+/* Container dos gráficos */
+.charts-container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

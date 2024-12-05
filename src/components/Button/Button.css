@@ -1,0 +1,18 @@
+.button-default {
+    background-color: transparent;
+    color: #2e2e2e; /* Fonte e borda */
+    border: 2px solid #2e2e2e;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-default:hover {
+    background-color: #2e2e2e; /* Fundo preto no hover */
+    color: #ffffff; /* Texto branco no hover */
+    border-color: #2e2e2e;
+}
